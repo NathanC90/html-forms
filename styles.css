@@ -134,3 +134,12 @@ body {
 .legacy-form-row input[type='radio'] {
     float: left;
 }
+
+/* Styling select elements */
+
+.form-row select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px; /* This doesn't work in Safari */
+    appearance: none; /* This make font-size work in Safari */
+}
