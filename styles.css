@@ -64,45 +64,6 @@ body {
     margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 700px) {
-    .speaker-form-header,
-    .speaker-form {
-        width: 600px;
-    }
-    .form-row {
-        flex-direction: row;
-        align-items: flex-start; /* To avoid stretching */
-        margin-bottom: 20px;
-    }
-    .form-row input[type='text'],
-    .form-row input[type='email'],
-    .form-row select,
-    .form-row textarea {
-        width: 250px;
-        height: initial;
-    }
-    .form-row label {
-        text-align: right;
-        width: 120px;
-        margin-top: 7px;
-        padding-right: 20px;
-    }
-    .legacy-form-row {
-        margin-bottom: 10px;
-    }
-    .legacy-form-row legend {
-        width: 120px;
-        text-align: right;
-        padding-right: 20px;
-    }
-    .legacy-form-row legend {
-        float: left;
-    }
-    .form-row .instructions {
-        margin-left: 120px;
-    }
-}
-
 /* Styling invalid state */
 
 .form-row input[type='text']:invalid,
@@ -164,4 +125,77 @@ body {
     color: #999999;
     font-size: 14px;
     margin-bottom: 30px;
+}
+
+/* Styling checkboxes */
+
+.form-row .checkbox-label {
+    margin-bottom: 0;
+}
+
+/* Styling buttons */
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #5995DA;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row  button:hover {
+    background-color: #76AEED;
+}
+
+.form-row button:active {
+    background-color: #407FC7;
+}
+
+@media only screen and (min-width: 700px) {
+    .speaker-form-header,
+    .speaker-form {
+        width: 600px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start; /* To avoid stretching */
+        margin-bottom: 20px;
+    }
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row select,
+    .form-row textarea {
+        width: 250px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    .legacy-form-row {
+        margin-bottom: 10px;
+    }
+    .legacy-form-row legend {
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .legacy-form-row legend {
+        float: left;
+    }
+    .form-row .instructions {
+        margin-left: 120px;
+    }
+    .form-row .checkbox-label {
+        margin-left: 120px;
+        width: auto;
+    }
+    .form-row button {
+        margin-left: 120px;
+    }
 }
