@@ -79,7 +79,7 @@
         </li>
         <li>
           <label for="phone">Phone number:</label>
-          <input type="tel" name="phone" id="phone" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" maxlength="15">
+          <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}|[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}|[0-9]{3}[\.][0-9]{3}[\.][0-9]{4}|[0-9]{3}[\s][0-9]{3}[\s][0-9]{4}">
         </li>
         <li>
           <label for="comment">Comment:</label>
@@ -92,5 +92,4 @@
       </ul>
     </form>
   </body>
-
 </html>
